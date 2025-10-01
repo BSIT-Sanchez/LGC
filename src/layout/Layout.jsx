@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
   const handleLogout = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:5000/api/auth/logout", {
+      const res = await fetch("https://clinic-backend-xi.vercel.app/api/auth/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
