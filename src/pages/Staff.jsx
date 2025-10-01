@@ -17,7 +17,7 @@ const Staff = () => {
   const [filterRole, setFilterRole] = useState("All");
   const [filterStatus, setFilterStatus] = useState("All");
 
-  const API_URL = "http://localhost:5000/api/staff";
+  const API_URL = "https://clinic-backend-xi.vercel.app/api/staff";
 
   useEffect(() => {
     fetchStaff();

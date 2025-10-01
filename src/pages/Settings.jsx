@@ -25,7 +25,7 @@ const Settings = () => {
   // ✅ Fetch all users
   const fetchUsers = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/users");
+      const res = await fetch("https://clinic-backend-xi.vercel.app/api/users");
       const data = await res.json();
       setUsers(data);
     } catch (error) {
@@ -45,7 +45,7 @@ const Settings = () => {
   // ✅ Add user
   const handleAddUser = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/auth/register", {
+      const res = await fetch("https://clinic-backend-xi.vercel.app/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -87,7 +87,7 @@ const Settings = () => {
   // ✅ Update user
   const handleUpdateUser = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/users/${form.id}`, {
+      const res = await fetch(`https://clinic-backend-xi.vercel.app/api/users/${form.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -119,7 +119,7 @@ const Settings = () => {
     if (!window.confirm("Are you sure you want to delete this user?")) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/users/${id}`, {
+      const res = await fetch(`https://clinic-backend-xi.vercel.app/api/users/${id}`, {
         method: "DELETE",
       });
       const data = await res.json();

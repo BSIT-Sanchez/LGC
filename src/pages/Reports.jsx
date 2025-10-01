@@ -8,7 +8,7 @@ const Reports = () => {
   const [selectedReport, setSelectedReport] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
-  const API_URL = "http://localhost:5000/api/reports";
+  const API_URL = "https://clinic-backend-xi.vercel.app/api/reports";
 
   useEffect(() => {
     fetchReports();

@@ -12,7 +12,7 @@ const Inventory = () => {
   const [form, setForm] = useState({ name: "", category: "Medicines", stock: 0 });
   const [categoryFilter, setCategoryFilter] = useState("All");
 
-  const API_URL = "http://localhost:5000/api/inventory";
+  const API_URL = "https://clinic-backend-xi.vercel.app/api/inventory";
 
   const fetchItems = async () => {
     try {

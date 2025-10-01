@@ -22,8 +22,8 @@ const Billing = () => {
     status: "Unpaid",
   });
 
-  const API_URL = "http://localhost:5000/api/billing";
-  const PATIENT_URL = "http://localhost:5000/api/patients";
+  const API_URL = "https://clinic-backend-xi.vercel.app/api/billing";
+  const PATIENT_URL = "https://clinic-backend-xi.vercel.app/api/patients";
 
   useEffect(() => {
     fetchPatients();

@@ -14,7 +14,7 @@ const Patients = () => {
     notes: "",
   });
 
-  const API_URL = "http://localhost:5000/api/patients"; // Your API endpoint
+  const API_URL = "https://clinic-backend-xi.vercel.app/api/patients"; // Your API endpoint
 
   // Fetch patients from API
   const fetchPatients = async () => {

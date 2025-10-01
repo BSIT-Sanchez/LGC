@@ -24,7 +24,7 @@ const Appointment = () => {
     type: "All",
   });
 
-  const API_URL = "http://localhost:5000/api"; // adjust if needed
+  const API_URL = "https://clinic-backend-xi.vercel.app//api"; // adjust if needed
 
   // Fetch all appointments
   const fetchAppointments = async () => {

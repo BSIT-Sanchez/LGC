@@ -31,7 +31,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/dashboard/stats");
+        const res = await fetch("https://clinic-backend-xi.vercel.app/api/dashboard/stats");
         const data = await res.json();
         if (data.success) {
           setStats(data.stats);
